@@ -197,5 +197,5 @@ int main()
         }
     }
     liberar_lista(lista);   // Liberación del total de la memoria.
-    printf(VERDE S "EXIT PROGRAM" S);
+    printf(VERDE S "EXIT PROGRAM" DS);
 }
