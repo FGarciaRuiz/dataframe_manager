@@ -163,6 +163,28 @@ void metadatos(Nodo* nodo)
     printf(S);
 }
 
+//  FUNCIÓN: Enseña todos los comandos posibles cuando se usa el comando 'help'.
+//  RETORNO: No devuelve.
+void comandos()
+{
+    printf(BLANCO DS "Comandos disponibles:" DS);
+    printf("load <archivo.csv>         : Carga un archivo CSV como dataframe.\n");
+    printf("name <nombre>              : Cambia el nombre del dataframe activo.\n");
+    printf("list                       : Muestra los dataframes cargados.\n");
+    printf("prefix <col> <n> <nuevo>   : Crea una columna con los primeros n caracteres de <col>.\n");
+    printf("meta                       : Muestra metadatos del dataframe activo.\n");
+    printf("view [n]                   : Muestra las primeras n filas (por defecto 10).\n");
+    printf("view -n                    : Muestra las últimas n filas.\n");
+    printf("quarter <col> <nuevo>      : Crea columna con trimestre de fechas de <col>.\n");
+    printf("delcolum <col>             : Elimina la columna indicada.\n");
+    printf("delnull <col>              : Elimina filas con nulos en la columna indicada.\n");
+    printf("sort <col> [asc|des]       : Ordena la columna ascendente o descendente.\n");
+    printf("filter <col> <comp> <val>  : Filtra filas según comparación en columna.\n");
+    printf("save <archivo.csv>         : Exporta el dataframe activo a CSV.\n");
+    printf("quit                       : Sale del programa.\n");
+    printf(DS);
+}
+
 //  FUNCIÓN: Muestra por pantalla las nFilas del dataframe con todas las ordenaciones que se hayan realizado.
 //  RETORNO: No devuelve.
 void mostrar_dataframe(Dataframe* df,int nFilas)

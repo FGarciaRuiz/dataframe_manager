@@ -87,6 +87,10 @@ int main()
             else
                 metadatos(nodo_act);
         }
+        else if(!strcmp(arg[0],"help"))
+        {
+            comandos();
+        }
         else if(!strcmp(arg[0],"view"))
         {
             if(!nodo_act)

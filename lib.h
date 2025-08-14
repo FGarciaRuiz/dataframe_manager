@@ -106,6 +106,11 @@ void metadatos(Nodo* nodo);
 //  FUNCIÓN: Muestra por pantalla información sobre el dataframe activo (nº Columnas y filas,nombre,tipo y nºnulos en cada columna).
 //  RETORNO: No devuelve.
 
+void comandos();
+//  PROTOTIPO: void comandos()
+//  FUNCIÓN: Enseña todos los comandos posibles cuando se usa el comando 'help'.
+//  RETORNO: No devuelve.
+
 void mostrar_dataframe(Dataframe* df,int nFilas);
 //  PROTOTIPO: void mostrar_dataframe(Dataframe*,int)
 //  FUNCIÓN: Muestra por pantalla las nFilas del dataframe con todas las ordenaciones que se hayan realizado.
